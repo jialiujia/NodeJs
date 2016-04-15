@@ -1,0 +1,549 @@
+@charset "UTF-8";
+
+.public-header 
+{
+    width:100%;
+    height:60px;
+    position:relative;
+    background-color:#4d8bd6;
+    border-bottom-style:solid;
+    border-bottom-width:2px;
+}
+
+.public-header-nav
+{
+    position:relative;
+    height:60px;
+    width:90%;
+    margin:0 auto;
+    background:#4d8bd6;
+}
+
+.public-header-nav-logo
+{
+    position:relative;
+    float:left;
+    width:295px;
+    height:60px;
+    background:url("/images/logo.gif") no-repeat center;
+}
+
+.public-header-nav-bar
+{
+    position:relative;
+    float:right;
+    height:60px;
+    line-height:60px;
+    padding-left:4px;
+    padding-bottom:4px;
+    color:#ffffff;
+}
+
+.public-header-nav-bar a:visited
+{
+    color:#ffffff;
+}
+
+.public-header-nav-bar a:hover {
+    text-decoration:underline;
+    color:Red;
+}
+
+.public-header-nav-bar .line
+{
+    position:relative;
+    padding:0 10PX;
+}
+
+.list_gongneng
+{
+    position:relative;
+    float:left;
+    width:90px;
+    height:100%;
+    background:#2F2F2F;
+}
+
+.list_gongneng .gognneng01
+{
+    background:url("/images/gongneng_Map.gif") no-repeat center;
+}
+
+.list_gongneng .gognneng02
+{
+    background:url("/images/gongneng_Diagnosis.gif") no-repeat center;
+}
+
+.list_gongneng .gognneng03
+{
+    background:url("/images/gongneng_Advice.gif") no-repeat center;
+}
+
+.list_gongneng .gognneng04
+{
+    background:url("/images/gongneng_Analysis.gif") no-repeat center;
+}
+
+.list_gongneng ul
+{
+    height:100%;
+}
+
+.list_gongneng ul li
+{
+   position:relative;
+   height:15%;
+   width:100%;
+   margin-top:5px;
+   line-height:175px;
+   text-align:center;
+   font-family:"SimHei";
+   color:#717274;
+   font-size:15px;
+}
+
+.list_gongneng ul li:hover
+{
+    background-color:#0160BC;
+    border-bottom-style:hidden;
+    border-top-style:hidden;
+    color:White;
+}
+
+.list_gongneng ul li.active
+{
+    background-color:#0160BC;
+    border-bottom-style:hidden;
+    border-top-style:hidden;
+    color:White;
+}
+
+.public-container
+{
+    position:relative;
+    float:left;
+    width:93.8%;
+    height:100%;
+    top: -4px;
+}
+
+.public-container .public-background-bar 
+{
+    position:relative;
+    width:600px;
+    height:120px;
+    top: 40%; 
+    margin:auto;
+}
+
+.public-button-background
+{
+    float:left;
+    width:120px;
+    height:120px;
+    background-color:#5b9bd5;
+}
+
+.public-button-background .circle
+{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    margin:auto;
+    margin-top:10px;
+    background:#5cbfdf;
+    font-family:黑体;
+    font-size:38px;
+    text-align: center;
+    line-height:100px;
+    color:White;
+}
+    
+
+.public-container .public-background
+{
+    width:100%;
+    height:100%;
+    background:#5b9bd5;
+}
+
+.public-container .public-background-listbar
+{
+    width:100%;
+    height:7%;
+    background-color:#007bff;
+}
+
+.public-container .public-background-listbar-nav
+{
+    width:80%;
+    height:100%;
+    margin:0 auto;
+    background-color:#007bff;    
+}
+
+.public-container .public-background-grid
+{
+    width:100%;
+    height:93%;
+}
+
+.clear 
+{
+    clear: both;
+    height: 0px;
+    font-size: 0px;
+    visibility: hidden;
+    line-height: 0px;
+}
+
+.hide
+{
+    display:none;
+}
+
+.hvr-radial-out1 {
+  width:120px;
+  height:120px;  
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  /*overflow: hidden;*/
+  background-color:#e1e1e1;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-radial-out1:before {
+  content:"天然气";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #FFFFFF;
+
+  margin:auto;
+  margin-top:10px;
+  font-family:黑体;
+  font-size:30px;
+  text-align: center;
+  line-height:100px;
+  color:#5cbfdf;
+  width:100px;
+  height:100px;
+
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-radial-out1:hover, .hvr-radial-out1:focus, .hvr-radial-out1:active {
+  color: white;
+}
+.hvr-radial-out1:hover:before, .hvr-radial-out1:focus:before, .hvr-radial-out1:active:before {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.hvr-radial-out2 {
+  width:120px;
+  height:120px;  
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  /*overflow: hidden;*/
+  background-color:#e1e1e1;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-radial-out2:before {
+  content:"CO";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #FFFFFF;
+
+  margin:auto;
+  margin-top:10px;
+  font-family:黑体;
+  font-size:36px;
+  text-align: center;
+  line-height:100px;
+  color:#5cbfdf;
+  width:100px;
+  height:100px;
+
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-radial-out2:hover, .hvr-radial-out2:focus, .hvr-radial-out2:active {
+  color: white;
+}
+.hvr-radial-out2:hover:before, .hvr-radial-out2:focus:before, .hvr-radial-out2:active:before {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.hvr-radial-out3 {
+  width:120px;
+  height:120px;  
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  /*overflow: hidden;*/
+  background-color:#e1e1e1;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-radial-out3:before {
+  content:"火源";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #FFFFFF;
+
+  margin:auto;
+  margin-top:10px;
+  font-family:黑体;
+  font-size:30px;
+  text-align: center;
+  line-height:100px;
+  color:#5cbfdf;
+  width:100px;
+  height:100px;
+
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-radial-out3:hover, .hvr-radial-out3:focus, .hvr-radial-out3:active {
+  color: #5cbfdf;
+  text-decoration:underline;
+}
+.hvr-radial-out3:hover:before, .hvr-radial-out3:focus:before, .hvr-radial-out3:active:before {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.hvr-radial-out4 {
+  width:120px;
+  height:120px;  
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  /*overflow: hidden;*/
+  background-color:#e1e1e1;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-radial-out4:before {
+  content:"电量";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #FFFFFF;
+
+  margin:auto;
+  margin-top:10px;
+  font-family:黑体;
+  font-size:30px;
+  text-align: center;
+  line-height:100px;
+  color:#5cbfdf;
+  width:100px;
+  height:100px;
+
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-radial-out4:hover, .hvr-radial-out4:focus, .hvr-radial-out4:active {
+  color: #5cbfdf;
+  text-decoration:underline;
+}
+.hvr-radial-out4:hover:before, .hvr-radial-out4:focus:before, .hvr-radial-out4:active:before {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.hvr-radial-out5 {
+  width:120px;
+  height:120px;  
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  /*overflow: hidden;*/
+  background-color:#e1e1e1;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-radial-out5:before {
+  content:"温度";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #FFFFFF;
+
+  margin:auto;
+  margin-top:10px;
+  font-family:黑体;
+  font-size:30px;
+  text-align: center;
+  line-height:100px;
+  color:#5cbfdf;
+  width:100px;
+  height:100px;
+
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-radial-out5:hover, .hvr-radial-out5:focus, .hvr-radial-out5:active {
+  color: #5cbfdf;
+  text-decoration:underline;
+}
+.hvr-radial-out5:hover:before, .hvr-radial-out5:focus:before, .hvr-radial-out5:active:before {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.hvr-radial-out6 {
+  width:120px;
+  height:120px;  
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  /*overflow: hidden;*/
+  background-color:#e1e1e1;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-radial-out6:before {
+  content:"湿度";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #FFFFFF;
+
+  margin:auto;
+  margin-top:10px;
+  font-family:黑体;
+  font-size:30px;
+  text-align: center;
+  line-height:100px;
+  color:#5cbfdf;
+  width:100px;
+  height:100px;
+
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-radial-out6:hover, .hvr-radial-out6:focus, .hvr-radial-out6:active {
+  color: #5cbfdf;
+  text-decoration:underline;
+}
+.hvr-radial-out6:hover:before, .hvr-radial-out6:focus:before, .hvr-radial-out6:active:before {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
