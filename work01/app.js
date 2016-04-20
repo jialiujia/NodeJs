@@ -26,9 +26,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', routes);
+app.use('/', map);
 app.use('/users', users);
-app.use('/map',map);
 app.use('/safety',safety);
 app.use('/device',device);
 app.use('/analysis',analysis);

@@ -8,7 +8,7 @@ html
     link(type='text/css', rel='Stylesheet', href='/javascripts/ExtJs/resources/ext-theme-neptune/ext-theme-neptune-all.css')
     link(type='text/css', rel='Stylesheet', href='/stylesheets/Index.css')
     link(type='text/css', rel='Stylesheet', href='/stylesheets/Style.css')
-  body.x-body(onload="changeGongnengStyle('map_container','public-background','li_map')")
+  body.x-body(onload="getroute()")
     .public-header
       .public-header-nav
         .public-header-nav-logo
@@ -18,7 +18,7 @@ html
           a(style='cursor:pointer') 关于云平台
     .list_gongneng
       ul
-        li#li_map.gognneng01(style='cursor:pointer', onclick="changeGongnengStyle('li_map')", href='/map') 地图视图
+        li#li_map.gognneng01(style='cursor:pointer', onclick="changeGongnengStyle('li_map')", href='/') 地图视图
         li#li_safety.gognneng02(style='cursor:pointer', onclick="changeGongnengStyle('li_safety')", href='/safety') 安全诊断
         li#li_device.gognneng03(style='cursor:pointer', onclick="changeGongnengStyle('li_device')", href='/device') 设备状况
         li#li_analysis.gognneng04(style='cursor:pointer', onclick="changeGongnengStyle('li_analysis')", href='/analysis') 统计分析
@@ -29,10 +29,12 @@ html
     script(type='text/javascript').
       function changeGongnengStyle(li_id) {
       var li_ids=["li_map","li_safety","li_device","li_analysis"];
+      var route=["","safety","device","analysis"];
       for (var i = 0; i < li_ids.length; i++) {
       if (li_id==li_ids[i]) {
       var li=document.getElementById(li_id);
       li.className="gognneng0"+(i+1).toString()+" active";
+      window.location.href="/"+route[i];
       }
       else {
       var li=document.getElementById(li_ids[i]);
@@ -40,4 +42,23 @@ html
       }
       }
       }
+
+      function getroute(){
+      var url=document.location.toString();
+      var arrUrl=url.split("//");
+      var start = arrUrl[1].indexOf("/");
+      var relUrl = arrUrl[1].substring(start);
+      if(relUrl.indexOf("?")!=-1){
+      relUrl = relUrl.split("?")[0];
+      }
+      switch(relUrl){
+      case "/":var li=document.getElementById("li_map");li.className="gognneng01 active";break;
+      case "/safety":var li=document.getElementById("li_safety");li.className="gognneng02 active";break;
+      case "/device":var li=document.getElementById("li_device");li.className="gognneng03 active";break;
+      case "/analysis":var li=document.getElementById("li_analysis");li.className="gognneng04 active";break;
+      default:break;
+      }
+      }
+
+
 
