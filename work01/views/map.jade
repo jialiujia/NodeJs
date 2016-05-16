@@ -1,4 +1,8 @@
 extends layout
-
+append head
+ script(src='http://api.map.baidu.com/api?v=2.0&ak=exNuD9EMe2ToGheEXztLfnwP',type='text/javascript')
+ script(src='/javascripts/BaiduMap/MapCommon.js',type='text/javascript')
+ script(type='text/javascript' src='http://api.map.baidu.com/library/MarkerClusterer/1.2/src/MarkerClusterer_min.js')
+ script(stype='text/javascript' src='http://api.map.baidu.com/library/TextIconOverlay/1.2/src/TextIconOverlay_min.js')
 block content
-    #map_container.public-background
+ #map_container.public-background
